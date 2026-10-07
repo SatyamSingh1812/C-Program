@@ -1,0 +1,23 @@
+// decimal to binary using recursion
+#include <stdio.h>
+int fun(int x){
+    if(x==0 ||x==1 ){
+        printf("%d",x);
+        //return x;
+    }
+    else{
+         fun(x/2);
+         printf("%d",x%2);
+    }
+    
+}
+int main()
+{   
+    int m;
+    printf("Enter the number: ");
+    scanf("%d",&m);
+     fun(m);
+    //printf("Binary:%d  ",binary);
+
+    return 0;
+}
