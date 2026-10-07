@@ -1,0 +1,20 @@
+// find power using recursion
+#include <stdio.h>
+int fun(int x,int y){
+    if(y==1 )
+        return x;
+    
+    return x*fun(x,y-1);
+
+    
+}
+int main()
+{   
+    int m,n,mul;
+    printf("Enter the number: ");
+    scanf("%d%d",&m,&n);
+    mul= fun(m,n);
+    printf("%d",mul);
+
+    return 0;
+}
