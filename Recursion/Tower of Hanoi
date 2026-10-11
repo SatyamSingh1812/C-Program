@@ -1,0 +1,22 @@
+#include <stdio.h>
+void Toh(int n,char source, char dest , char auxi){
+    if(n==1){
+        printf("%c-->%c\n",source,dest);
+        //return;
+    }
+    else{
+        Toh(n-1,source,auxi,dest);//when this will run source will be same,auxi dest bn ja jayega
+        printf("%c-->%c\n",source,dest);
+        Toh(n-1,auxi,dest,source);//auxi become source,dest will be dest,sourcewill be auxi
+    }
+}
+
+int main()
+{
+    int n;
+    printf("Enter the number: ");
+    scanf("%d",&n);
+    Toh(n,'A','C','B');
+
+    return 0;
+}
