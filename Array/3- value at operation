@@ -1,0 +1,12 @@
+#include <stdio.h>
+// here we know that how we can write our codes;
+int main()
+{
+    int a[4]={10,20,30,40};
+    printf("%d\n",a[1]); // here we get 20
+    printf("%d\n",*(a+1));// 20, bcz * give us what value present on that memory location
+    printf("%d\n",*(1+a));// simple hai bro, addition is commutative -->*(a+1) is same as *(1+a)
+    printf("%d",1[a]); // same case of 3rd one
+
+    return 0;
+}
