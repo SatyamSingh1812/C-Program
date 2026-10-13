@@ -4,6 +4,8 @@
 int main()
 {
     int a[4]={10,20,30,40};
+    printf("%d\n",sizeof(int));
+    printf("%d\n",sizeof(a));
     printf("%u\n",a);
     printf("%u\n",a+1);
     printf("%u\n",&a);
