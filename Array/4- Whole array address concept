@@ -16,6 +16,6 @@ int main()
 \\whenever a+1 or &a+1 written in code then ask 3 question
 \\1- what is a ? address or value 
 \\2- which object is pointed by a 
-\\3- what is the size of that object
+\\3- what is the size of that object -- 
 \\ if add = 1000 , then 100+1*4 = 1004 where int have 4 byte 
 --- &a means we are talking about whole address.
