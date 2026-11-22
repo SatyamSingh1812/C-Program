@@ -1,0 +1,19 @@
+In this section you'll learn how to create pointer funtion and why we are using it;
+--->see if you know the address of ponter then you can pass funtion as an argument to other function;
+int  add(int , int)// this is our funtion which take 2 integer argument and return an integer value;
+'How to create pointer of this function '
+"very easy"
+int (*p)(int , int );
+----> ' p is a pointer to function which take 2 integer argument and return an integer value;
+(CODE)
+#include<stdio.h>
+int add(int , int); //function declaration
+void main(){
+    int (*p)(int,int);
+    p = add;// here p has address of function 
+    int result = (*p)(20,30);// here (*p) is itself function 
+    printf("%d",result);
+}
+int add(int a,int b){ // function definition
+    return a+b;
+}
